@@ -344,6 +344,16 @@ class SQLServerPlatform extends AbstractPlatform
     }
 
     /**
+     * Gets the SQL specific for the platform to get the current date.
+     *
+     * @return string
+     */
+    public function getCurrentDateSQL()
+    {
+        return 'GETDATE';
+    }
+
+    /**
      * @override
      */
     public function getShowDatabasesSQL()
