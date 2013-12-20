@@ -350,7 +350,7 @@ class SQLServerPlatform extends AbstractPlatform
      */
     public function getCurrentDateSQL()
     {
-        return 'GETDATE';
+        return 'GETDATE()';
     }
 
     /**
